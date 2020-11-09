@@ -10,7 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_08_193144) do
+ActiveRecord::Schema.define(version: 2020_11_09_122707) do
+
+  create_table "subtasks", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.integer "task_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["task_id"], name: "index_subtasks_on_task_id"
+  end
+
+  create_table "task_lists", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.boolean "public", default: false
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_task_lists_on_user_id"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "title"
+    t.integer "task_list_id", null: false
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["task_list_id"], name: "index_tasks_on_task_list_id"
+  end
+
+  create_table "user_favorites", force: :cascade do |t|
+    t.integer "task_list_id", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["task_list_id"], name: "index_user_favorites_on_task_list_id"
+    t.index ["user_id"], name: "index_user_favorites_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -24,4 +61,9 @@ ActiveRecord::Schema.define(version: 2020_11_08_193144) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "subtasks", "tasks"
+  add_foreign_key "task_lists", "users"
+  add_foreign_key "tasks", "task_lists"
+  add_foreign_key "user_favorites", "task_lists"
+  add_foreign_key "user_favorites", "users"
 end
