@@ -1,0 +1,23 @@
+<%= form_with model: @task_list do |f| %>
+  <div class='field'>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class='field'>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+  <div id='tasks'>
+    <%= f.fields_for :tasks do |t| %>
+        <%= render 'task_fields', f: t %>
+    <% end %>
+    <div class='links'>
+        <%= link_to_add_association t('models.task.add', scope: :activerecord), f, :tasks %>
+    </div>
+  </div>
+  <div class='field'>
+    <%= f.label :public %>
+    <%= f.check_box :public %>
+  </div>
+  <%= f.submit 'Criar lista' %>
+<% end %>

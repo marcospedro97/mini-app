@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      subtask:
+        add: 'Adcionar subtarefa'
+        remove: 'Remover subtarefa'
+
+    attributes:
+      subtask:
+        title: 'Nome da subtarefa'
+        description: 'Descrição da subtarefa'

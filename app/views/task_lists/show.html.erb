@@ -1,0 +1,10 @@
+<%= @task_list.title %>
+<%= @task_list.description %>
+<% @task_list.tasks.each do |task| %>
+  <%= task.title %>
+  <%= task.description %>
+  <% task.subtasks.each do |subtask| %>
+    <%= subtask.title %>
+    <%= subtask.description %>
+  <% end %>
+<% end %>

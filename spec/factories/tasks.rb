@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :task do
-    title { "MyString" }
+    title { 'MyString' }
     task_list { nil }
-    description { "MyText" }
+    description { 'MyText' }
   end
 end

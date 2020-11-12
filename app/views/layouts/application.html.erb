@@ -4,13 +4,25 @@
     <title>MiniApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class='side-bar'>
+      <% if user_signed_in? %>
+        <%= link_to t('shared.links.sign_out', scope: :devise), destroy_user_session_path, method: :delete, class: 'destroy-session' %>
+        <%= link_to t('models.task_list.create', scope: :activerecord), new_task_list_path %>
+      <% else %>
+        <%= link_to t('shared.links.sign_in', scope: :devise), new_user_session_path, class: 'destroy-session' %>
+      <% end %>
+    </div>
+    <% unless alert.nil? %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+    <% unless alert.nil? %>
+      <p class="notice"><%= notice %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,10 @@
+pt-BR:
+  activerecord:
+    models:
+      task_list:
+        create: 'Criar lista de tarefas'
+
+    attributes:
+      task_list:
+        title: 'Titulo'
+        description: 'Descrição'
