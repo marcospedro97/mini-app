@@ -4,6 +4,7 @@ pt-BR:
       task:
         add: 'Adcionar tarefa'
         remove: 'Remover tarefa'
+        close: 'Fechar tarefa'
 
     attributes:
       task:

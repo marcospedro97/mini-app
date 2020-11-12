@@ -1,7 +1,218 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/alph/proj/mini-app/spec/features/user_creates_list_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/spec/features/user_view_lists_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/spec/models/subtask_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/app/models/subtask.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/spec/models/task_list_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/app/models/task_list.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/spec/models/task_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/app/models/task.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          2,
+          1,
+          0,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/spec/models/user_favorite_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/app/models/user_favorite.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/app/controllers/task_lists_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/alph/proj/mini-app/app/controllers/tasks_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
     },
-    "timestamp": 1604864293
+    "timestamp": 1605223255
   }
 }

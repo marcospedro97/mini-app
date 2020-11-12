@@ -1,4 +1,10 @@
 class TaskListsController < ApplicationController
+  before_action :authenticate_user!
+
+  def user
+    @task_lists = TaskList.where(user_id: current_user.id)
+  end
+
   def show
     @task_list = TaskList.find(params[:id])
   end

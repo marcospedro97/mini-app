@@ -1,10 +1,13 @@
 <%= @task_list.title %>
 <%= @task_list.description %>
 <% @task_list.tasks.each do |task| %>
-  <%= task.title %>
-  <%= task.description %>
-  <% task.subtasks.each do |subtask| %>
-    <%= subtask.title %>
-    <%= subtask.description %>
-  <% end %>
+  <div class='task'>
+    <%= task.title %>
+    <%= task.description %>
+    <% task.subtasks.each do |subtask| %>
+      <%= subtask.title %>
+      <%= subtask.description %>
+    <% end %>
+    <%= link_to t('models.task.close', scope: :activerecord), close_task_path(task.id), method: :put %>
+  </div>
 <% end %>

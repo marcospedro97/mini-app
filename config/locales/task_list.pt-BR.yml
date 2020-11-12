@@ -3,6 +3,7 @@ pt-BR:
     models:
       task_list:
         create: 'Criar lista de tarefas'
+        user_lists: 'Minhas listas'
 
     attributes:
       task_list:
