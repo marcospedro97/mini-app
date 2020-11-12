@@ -36,7 +36,12 @@ end
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
-
+  # config for feature tests with js
+  Capybara.javascript_driver = :selenium_chrome_headless
+  Capybara.server = :puma, { Silent: true }
+  # Devise integration helpers for feature tests
+  config.include Warden::Test::Helpers
+  # Syntax methods from factorybot
   config.include FactoryBot::Syntax::Methods
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
