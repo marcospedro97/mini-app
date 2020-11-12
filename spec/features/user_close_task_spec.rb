@@ -5,7 +5,7 @@ describe 'user close task' do
     # ARRANGE
     user = create(:user)
     task_list = create(:task_list, user: user)
-    tasks = create_list(:task, 5, task_list_id: task_list.id)
+    create_list(:task, 5, task_list_id: task_list.id)
     # ACT
     login_as user, scope: :user
     visit root_path

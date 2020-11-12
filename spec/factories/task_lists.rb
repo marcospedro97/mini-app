@@ -10,7 +10,7 @@ FactoryBot.define do
       public { true }
       title { 'MyString' }
       description { 'MyText' }
-      tasks { build_list(:task, 5)}
+      tasks { build_list(:task_with_subtasks, 5) }
     end
   end
 end

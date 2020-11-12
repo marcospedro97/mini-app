@@ -5,10 +5,11 @@ class Task < ApplicationRecord
 
   def close(user_id)
     return unless task_list.user_id == user_id
-    self.subtasks.each do |subtask|
+
+    subtasks.each do |subtask|
       subtask.open = false
     end
     self.open = false
-    self.save
+    save
   end
 end
