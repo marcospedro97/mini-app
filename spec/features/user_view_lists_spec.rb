@@ -19,7 +19,7 @@ describe 'user view lists' do
       # ARRANGE
       create_list(:task_list, 5, public: true)
       # ACT
-      visit public_task_lists_path
+      visit task_lists_path
       # ASSERT
       expect(current_path).to eq(new_user_session_path)
     end
@@ -43,7 +43,7 @@ describe 'user view lists' do
       # ARRANGE
       create_list(:task_list, 5, public: true)
       # ACT
-      visit user_task_lists_path
+      visit user_task_lists_path(1)
       # ASSERT
       expect(current_path).to eq(new_user_session_path)
     end

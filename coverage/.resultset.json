@@ -33,6 +33,29 @@
           null
         ]
       },
+      "/home/alph/proj/mini-app/spec/features/user_favorite_task_list_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
       "/home/alph/proj/mini-app/spec/features/user_view_lists_spec.rb": {
         "lines": [
           1,
@@ -122,6 +145,13 @@
           null,
           1,
           1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
           null
         ]
       },
@@ -181,6 +211,16 @@
           1,
           1,
           1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
           null
         ]
       },
@@ -206,7 +246,7 @@
           null
         ]
       },
-      "/home/alph/proj/mini-app/app/controllers/task_lists_controller.rb": {
+      "/home/alph/proj/mini-app/app/controllers/users/task_lists_controller.rb": {
         "lines": [
           1,
           1,
@@ -216,10 +256,6 @@
           null,
           null,
           1,
-          1,
-          null,
-          null,
-          1,
           2,
           null,
           null,
@@ -227,7 +263,6 @@
           1,
           null,
           null,
-          1,
           1,
           1,
           1,
@@ -247,10 +282,11 @@
           null,
           null,
           null,
+          null,
           null
         ]
       },
-      "/home/alph/proj/mini-app/app/controllers/tasks_controller.rb": {
+      "/home/alph/proj/mini-app/app/controllers/users/tasks_controller.rb": {
         "lines": [
           1,
           1,
@@ -259,8 +295,23 @@
           null,
           null
         ]
+      },
+      "/home/alph/proj/mini-app/app/controllers/task_lists_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1605226737
+    "timestamp": 1605300998
   }
 }

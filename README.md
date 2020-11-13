@@ -28,6 +28,6 @@ Things you may want to cover:
     No momento da criação de uma Lista já podemos criar várias Tarefas (usando nested attributes com javascript ou outro mecanismo de sua escolha). *
     Cada lista pode ser "Pública" ou "Privada" *
     O usuário criador da lista pode fechar uma tarefa *
-    O usuário logado pode ver listas públicas de outros usuários
+    O usuário logado pode ver listas públicas de outros usuários *
     O usuário logado pode marcar uma lista pública de outro usuário como favorita
     O usuário logado pode ver todas as listas que ele marcou como favoritas

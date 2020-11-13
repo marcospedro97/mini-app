@@ -11,10 +11,11 @@
   <body>
     <div class='side-bar'>
       <% if user_signed_in? %>
-        <%= link_to t('models.task_list.public_lists', scope: :activerecord),  public_task_lists_path %>
-        <%= link_to t('models.task_list.user_lists', scope: :activerecord), user_task_lists_path %>
+        <%= link_to t('models.user_favorite.index', scope: :activerecord), user_favorites_path(current_user.id) %>
+        <%= link_to t('models.task_list.public_lists', scope: :activerecord),  task_lists_path %>
+        <%= link_to t('models.task_list.user_lists', scope: :activerecord), user_task_lists_path(current_user.id) %>
         <%= link_to t('shared.links.sign_out', scope: :devise), destroy_user_session_path, method: :delete, class: 'destroy-session' %>
-        <%= link_to t('models.task_list.create', scope: :activerecord), new_task_list_path %>
+        <%= link_to t('models.task_list.create', scope: :activerecord), new_user_task_list_path(current_user.id) %>
       <% else %>
         <%= link_to t('shared.links.sign_in', scope: :devise), new_user_session_path, class: 'destroy-session' %>
       <% end %>

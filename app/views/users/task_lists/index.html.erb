@@ -1,0 +1,5 @@
+<% @task_lists.each do |t| %>
+  <div class='list'>
+    <%= link_to t.title, user_task_list_path(current_user.id, t) %>
+  </div>
+<% end %>
