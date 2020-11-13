@@ -11,5 +11,4 @@ Rails.application.routes.draw do
     end
     resources :favorites, controller: 'users/favorites', only: %i[index create]
   end
-
 end

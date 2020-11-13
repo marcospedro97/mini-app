@@ -1,10 +1,12 @@
-class Users::UserFavoritesController < ApplicationController
+module Users
+  class UserFavoritesController < ApplicationController
+    def index
+      @user_favorites = UserFavorite.where(user_id: current_user.id)
+    end
 
-  def index
-    @user_favorites = UserFavorite.where(user_id: current_user.id)
-  end
-
-  def create
-    UserFavorite.create(user_id: current_user.id, task_list_id: params[:task_list_id])
+    def create
+      UserFavorite.create(user_id: current_user.id,
+                          task_list_id: params[:task_list_id])
+    end
   end
 end

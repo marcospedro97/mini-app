@@ -6,6 +6,6 @@ class TaskListsController < ApplicationController
   end
 
   def show
-    @task_list = TaskList.find(params[:id])
+    @task_list = TaskList.where(id: params[:id], public: true).take
   end
 end
