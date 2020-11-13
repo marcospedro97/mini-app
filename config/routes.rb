@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: 'home#index'
   resources :task_lists do
     get 'user', on: :collection
-    get 'public'
+    get 'public', on: :collection
   end
   resources :tasks, only: %i[] do
     put 'close', on: :member

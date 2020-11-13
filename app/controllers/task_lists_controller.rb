@@ -5,6 +5,10 @@ class TaskListsController < ApplicationController
     @task_lists = TaskList.where(user_id: current_user.id)
   end
 
+  def public
+    @task_lists = TaskList.where(public: true)
+  end
+
   def show
     @task_list = TaskList.find(params[:id])
   end

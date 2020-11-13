@@ -4,6 +4,7 @@ pt-BR:
       task_list:
         create: 'Criar lista de tarefas'
         user_lists: 'Minhas listas'
+        public_lists: 'Listas públicas'
 
     attributes:
       task_list:
