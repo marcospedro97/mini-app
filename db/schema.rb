@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_12_224139) do
+ActiveRecord::Schema.define(version: 2020_11_14_005317) do
 
   create_table "subtasks", force: :cascade do |t|
     t.string "title"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2020_11_12_224139) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["task_list_id"], name: "index_user_favorites_on_task_list_id"
+    t.index ["user_id", "task_list_id"], name: "index_user_favorites_on_user_id_and_task_list_id", unique: true
     t.index ["user_id"], name: "index_user_favorites_on_user_id"
   end
 

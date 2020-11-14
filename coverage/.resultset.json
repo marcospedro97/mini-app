@@ -48,10 +48,9 @@
           1,
           1,
           1,
-          0,
+          1,
           null,
-          0,
-          0,
+          1,
           null,
           null
         ]
@@ -204,6 +203,8 @@
           1,
           1,
           1,
+          null,
+          1,
           null
         ]
       },
@@ -297,8 +298,29 @@
           null,
           null
         ]
+      },
+      "/home/alph/proj/mini-app/app/controllers/users/favorites_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1605302606
+    "timestamp": 1605314787
   }
 }

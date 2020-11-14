@@ -1,3 +1,7 @@
+<%= link_to t('models.user_favorite.create', scope: :activerecord),
+            user_favorites_path(current_user.id,
+                                task_list_id: @task_list.id),
+            method: :post %>
 <%= @task_list.title %>
 <%= @task_list.description %>
 <% @task_list.tasks.each do |task| %>
@@ -8,6 +12,8 @@
       <%= subtask.title %>
       <%= subtask.description %>
     <% end %>
-    <%= link_to t('models.task.close', scope: :activerecord), close_user_task_path(current_user.id, task.id), method: :put %>
+    <%= link_to t('models.task.close', scope: :activerecord),
+                close_user_task_path(current_user.id, task.id),
+                method: :put %>
   </div>
 <% end %>

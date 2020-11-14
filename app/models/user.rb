@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :task_lists, dependent: :destroy
-  has_many :favorites, dependent: :destroy
+  has_many :user_favorites, dependent: :destroy
   has_many :tasks, through: :task_lists
 end

@@ -1,0 +1,6 @@
+pt-BR:
+  activerecord:
+    models:
+      user_favorite:
+        create: 'Favoritar'
+        index: 'Favoritas'
